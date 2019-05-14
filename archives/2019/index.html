@@ -351,8 +351,8 @@
                 <span>关于如何修改Mysql数据库密码</span>
         </a>
         <div class="abstract-content">
-            Mysql 5.7版本之前：命令行输入：123mysql -u root -p 回车提示输入密码：(原始密码)update user set password=password(&apos;新密码&apos;) WHERE User=&apos;root(数据库名称)&apos;;
-Mysql 5.7版本之后，方法1：命令行输入：1234mysql -u root -p 回车提示输入密码：(原始密码)update mysql.user set authentication_string=password(&apos;新密码&apos;)where user = &apos;root(数据...
+            Mysql 5.7版本之前：命令行输入：123mysql -u root -p 回车提示输入密码：(原始密码)update user set password=password(&apos;新密码&apos;) WHERE User=&apos;root(用户名)&apos;;
+Mysql 5.7版本之后，方法1：命令行输入：1234mysql -u root -p 回车提示输入密码：(原始密码)update mysql.user set authentication_string=password(&apos;新密码&apos;)where user = &apos;root(用户名)...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
