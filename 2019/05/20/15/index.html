@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>冒泡排序 · kesheng&#39;s personal blog</title>
+    <title>5.20? 今天陪伴我一整天的竟然是coding....... · kesheng&#39;s personal blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">kesheng&#39;studio</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">冒泡排序</a>
+                <a href="#" class="post-name">5.20? 今天陪伴我一整天的竟然是coding.......</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            冒泡排序
+            5.20? 今天陪伴我一整天的竟然是coding.......
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">115</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">735</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/05/11</span>
+                    <span class="post-intro-time">2019/05/20</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,16 +395,16 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h3 id="C语言实现冒泡排序"><a href="#C语言实现冒泡排序" class="headerlink" title="C语言实现冒泡排序"></a>C语言实现冒泡排序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()&#123;</span><br><span class="line">	int a[20],i,j,t;</span><br><span class="line">	printf(&quot;请随机输入20个整数：&quot;);</span><br><span class="line">	for(i=0;i&lt;20;i++)&#123;</span><br><span class="line">		scanf(&quot;%d&quot;,&amp;a[i]);</span><br><span class="line">		getchar();</span><br><span class="line">	&#125;</span><br><span class="line">	for(i=0;i&lt;19;i++)</span><br><span class="line">		for(j=0;j&lt;19-i;j++)&#123;</span><br><span class="line">			if(a[j]&gt;a[j+1])</span><br><span class="line">			&#123;</span><br><span class="line">				t=a[j];</span><br><span class="line">				a[j]=a[j+1];</span><br><span class="line">				a[j+1]=t;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		printf(&quot;排序结果为：\n&quot;);</span><br><span class="line">		for(i=0;i&lt;20;i++)</span><br><span class="line">			printf(&quot;%d&quot;,a[i]);</span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>写个表白的program吧！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset = &quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;5.20专属告白代码，拿去不谢！&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div id = &quot;love0&quot;&gt;</span><br><span class="line">			&lt;p&gt;亲爱的xxx,我是爱你的xxx&lt;/p&gt;</span><br><span class="line">			&lt;br&gt;</span><br><span class="line">			&lt;p&gt;今天是5.20，我想对你说些心里话，你想听吗？&lt;/p&gt;</span><br><span class="line">			&lt;br&gt;</span><br><span class="line">			&lt;button id = &quot;btn0&quot;&gt;想听想听&lt;/button&gt;</span><br><span class="line">			&lt;button id = &quot;btn1&quot;&gt;不想&lt;/button&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div id = &quot;love1&quot; style = &quot;display:none&quot;&gt;</span><br><span class="line">			&lt;img src = &quot;https://image.baidu.com/search/detail?ct=503316480&amp;z=0&amp;ipn=d&amp;word=%E5%91%8A%E7%99%BD%E5%9B%BE%E7%89%87%E5%A4%A7%E5%85%A8&amp;hs=2&amp;pn=6&amp;spn=0&amp;di=84040&amp;pi=0&amp;rn=1&amp;tn=baiduimagedetail&amp;is=0%2C0&amp;ie=utf-8&amp;oe=utf-8&amp;cl=2&amp;lm=-1&amp;cs=2184502705%2C2172441180&amp;os=3852216142%2C1638428626&amp;simid=0%2C0&amp;adpicid=0&amp;lpn=0&amp;ln=30&amp;fr=ala&amp;fm=&amp;sme=&amp;cg=&amp;bdtype=0&amp;oriquery=%E5%91%8A%E7%99%BD%E5%9B%BE%E7%89%87%E5%A4%A7%E5%85%A8&amp;objurl=http%3A%2F%2Fimg.99danji.com%2Fuploadfile%2F2018%2F0516%2F20180516012609384.jpg&amp;fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bll1wg3t_z%26e3Bv54AzdH3FwzAzdH3Fbl80a8AzdH3F&amp;gsm=0&amp;islist=&amp;querylist=&quot;&gt;</span><br><span class="line">			&lt;p&gt;没有动人的情话，只有爱你的真心，和守护你一辈子的决心&lt;/p&gt;</span><br><span class="line">			&lt;br&gt;</span><br><span class="line">			&lt;p&gt;爱你是我今生最美的歌，想你却是今生最快乐的坚持，念你是我今生最开心的追求，恋你是我今生最得意的故事。&lt;/p&gt;</span><br><span class="line">			&lt;br</span><br><span class="line">			&lt;p&gt;就算时光风化了记忆，我仍会用我一生唱着，520我爱你！&lt;/p&gt;</span><br><span class="line">			&lt;br&gt;</span><br><span class="line">			&lt;p&gt;表白人：xxx&lt;/p&gt;</span><br><span class="line">			</span><br><span class="line">			</span><br><span class="line">			</span><br><span class="line">			&lt;p&gt;看的我自己都想吐。。。。。。。。。，样式也懒得写了！&lt;/p&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;img  id = &quot;img1&quot; src = &quot;https://image.baidu.com/search/detail?ct=503316480&amp;z=0&amp;ipn=d&amp;word=%E6%88%91%E7%88%B1%E4%BD%A0%E5%9B%BE%E7%89%87&amp;hs=2&amp;pn=1&amp;spn=0&amp;di=128480&amp;pi=0&amp;rn=1&amp;tn=baiduimagedetail&amp;is=0%2C0&amp;ie=utf-8&amp;oe=utf-8&amp;cl=2&amp;lm=-1&amp;cs=1507873901%2C3088704631&amp;os=723829148%2C3963648281&amp;simid=0%2C0&amp;adpicid=0&amp;lpn=0&amp;ln=30&amp;fr=ala&amp;fm=&amp;sme=&amp;cg=&amp;bdtype=0&amp;oriquery=%E6%88%91%E7%88%B1%E4%BD%A0%E5%9B%BE%E7%89%87&amp;objurl=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F18%2F01%2F04%2F4dbbd8f770c58a67a7b476c4604bd489.jpg&amp;fromurl=ippr_z2C%24qAzdH3FAzdH3Flafij3t_z%26e3Bv54AzdH3Ff7vwtAzdH3F8lndn9da_z%26e3Bip4s&amp;gsm=0&amp;islist=&amp;querylist=&quot; style = &quot;display:none&quot;&gt;</span><br><span class="line">		</span><br><span class="line">		&lt;script&gt;</span><br><span class="line">			window.onload = function()&#123;</span><br><span class="line">				var btn0 = document.getElementById(&quot;btn0&quot;);</span><br><span class="line">				var btn1 = document.getElementById(&quot;btn1&quot;);</span><br><span class="line">				var love1 = document.getElementById(&quot;love1&quot;);</span><br><span class="line">				var img1 = document.getElementById(&quot;img1&quot;);</span><br><span class="line">				</span><br><span class="line">				btn0.onclick = function()&#123;</span><br><span class="line">					love1.style.display = &apos;block&apos;;</span><br><span class="line">					alert(&quot;做我女朋友好吗？xxx&quot;);</span><br><span class="line">					img1.style.display = &quot;block&quot;;</span><br><span class="line">					</span><br><span class="line">				&#125;</span><br><span class="line">				btn1.onclick = function()&#123;</span><br><span class="line">					alert(&quot;你不想听我也要说，哼！&quot;);</span><br><span class="line">					love1.style.display = &apos;block&apos;;</span><br><span class="line">					alert(&quot;做我女朋友好吗？xxx&quot;);</span><br><span class="line">					img1.style.display = &quot;block&quot;;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://getitkesheng.github.io">kesheng</a>
-            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/05/11/01/">http://getitkesheng.github.io/2019/05/11/01/</a>
-            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/05/11/01/">May 11th 2019, 3:16:28 pm</a>
-            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/05/11/01/">May 11th 2019, 4:22:40 pm</a>
+            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/05/20/15/">http://getitkesheng.github.io/2019/05/20/15/</a>
+            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/05/20/15/">May 20th 2019, 3:59:38 pm</a>
+            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/05/20/15/">May 20th 2019, 5:02:10 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -413,16 +413,16 @@ height:50vh;
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href="/2019/05/11/03/" title="插入排序">
-                    <div class="nextTitle">插入排序</div>
+                <a href="/2019/05/20/index/" title>
+                    <div class="nextTitle">[Untitled Post]</div>
                 </a>
             
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/05/03/hello-world/" title="Hello World">
-                    <div class="prevTitle">Hello World</div>
+                <a href="/2019/05/20/14/" title="顺序栈实现（基于C语言,未完待续....）">
+                    <div class="prevTitle">顺序栈实现（基于C语言,未完待续....）</div>
                 </a>
             
         </li>
@@ -541,7 +541,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#C语言实现冒泡排序"><span class="toc-number">1.</span> <span class="toc-text">C语言实现冒泡排序</span></a></li></ol>
+        
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
