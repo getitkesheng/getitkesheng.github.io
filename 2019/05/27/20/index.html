@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>框架一时用一时爽，一直用一直爽 · kesheng&#39;s personal blog</title>
+    <title>vue全家桶--安装前期准备nodejs+cnpm+webpack+vue-cli+vue-router · kesheng&#39;s personal blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">kesheng&#39;studio</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">框架一时用一时爽，一直用一直爽</a>
+                <a href="#" class="post-name">vue全家桶--安装前期准备nodejs+cnpm+webpack+vue-cli+vue-router</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            框架一时用一时爽，一直用一直爽
+            vue全家桶--安装前期准备nodejs+cnpm+webpack+vue-cli+vue-router
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">20</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">640</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/05/18</span>
+                    <span class="post-intro-time">2019/05/27</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,16 +395,45 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>咋办！！！用习惯了到时原生的一点不会写就麻烦了</p>
+        <p>写在前面：</p>
+<p>什么是全家桶？</p>
+<p>包含了vue-router（<a href="http://router.vuejs.org），vuex（http://vuex.vuejs.org），" target="_blank" rel="noopener">http://router.vuejs.org），vuex（http://vuex.vuejs.org），</a> vue-resource（<a href="https://github.com/pagekit/vue-resource）。再加上构建工具vue-cli，sass/less样式,就是一个完整的vue项目的核心构成。" target="_blank" rel="noopener">https://github.com/pagekit/vue-resource）。再加上构建工具vue-cli，sass/less样式,就是一个完整的vue项目的核心构成。</a></p>
+<p>概括起来就是：、1.项目构建工具、2.路由、3.状态管理、4.http请求工具。</p>
+<p>其他：axios是一个http请求包，vue官网推荐使用axios进行http调用。</p>
+<p>1.安装nodejs。</p>
+<p>Node.js官方安装包及源码下载地址：<a href="http://nodejs.org/download/" target="_blank" rel="noopener">http://nodejs.org/download/</a></p>
+<p>一路next，安装完毕。</p>
+<p>1.命令行操作：win+r键调出运行，输cmd调出命令行。</p>
+<p>2.检查Node.js版本看是否安装成功：输入node -v。</p>
+<p>2.将淘宝镜像cnpm安装，解决npm外国安装过慢问题。</p>
+<p>1.打开命令行，输入</p>
+<p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>-g和-global同样都是全局的意思，以后再有新项目都不用再重复操作安装依赖了。安装好以后用cnpm 替代所有npm命令。</p>
+<p>（可以简写为cnpm i -g cnpm –registry=<a href="https://registry.npm.taobao.org，这里的i就是指的install,以后不再赘述）" target="_blank" rel="noopener">https://registry.npm.taobao.org，这里的i就是指的install,以后不再赘述）</a></p>
+<p>如果安装失败，可以使用 npm cache clean 清理缓存，然后再重新安装。后面的安装过程中，如有安装失败的情况，也需要先清理缓存。</p>
+<p>同样可以使用 cnpm -v 查看是否安装成功。</p>
+<p>3.使用 cnpm 安装 vue-cli 脚手架和 webpack。最新的 vue 项目模板中，都带有 webpack 插件，所以这里可以不安装 webpack。</p>
+<p>cnpm install -g vue-cli<br>安装完成后，可以使用 vue -V （注意 V 大写）查看是否安装成功。如果提示“无法识别 ‘vue’ ” ，有可能是 npm 版本过低，可以使用 npm install -g npm 来更新版本</p>
+<p>4.初始化项目</p>
+<p>vue init webpack 项目名称<br>比如在桌面shift右键调出命令行，输入vue init webpack my-vue ，然后一路回车过去，会默认自动安装vue-router，行使ESLint规范等。</p>
+<p>5.然后进入项目目录，使用 cnpm 安装依赖</p>
+<p>cd my-vue</p>
+<p>cnpm i</p>
+<p>然后启动项目 npm run dev</p>
+<p>浏览器打开输入：<a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a></p>
+<p>6自己的项目文件都需要放到 src 文件夹下</p>
+<p>7.项目开发完成之后，可以进行打包工作</p>
+<p>npm run build</p>
+<p>打包完成后，会生成 dist 文件夹，如果已经修改了文件路径，可以直接打开本地文件查看</p>
+<p>项目上线时，只需要将 dist 文件夹放到服务器就行了。</p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://getitkesheng.github.io">kesheng</a>
-            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/05/18/13/">http://getitkesheng.github.io/2019/05/18/13/</a>
-            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/05/18/13/">May 18th 2019, 10:26:23 pm</a>
-            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/05/18/13/">May 18th 2019, 10:28:34 pm</a>
+            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/05/27/20/">http://getitkesheng.github.io/2019/05/27/20/</a>
+            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/05/27/20/">May 27th 2019, 4:52:45 pm</a>
+            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/05/27/20/">May 27th 2019, 4:55:06 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -412,17 +441,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2019/05/20/14/" title="顺序栈实现（基于C语言,未完待续....）">
-                    <div class="nextTitle">顺序栈实现（基于C语言,未完待续....）</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/05/17/12/" title="如何理解Vue的MVVM（Model-View-ViewModel）架构设计模式">
-                    <div class="prevTitle">如何理解Vue的MVVM（Model-View-ViewModel）架构设计模式</div>
+                <a href="/2019/05/25/19/" title="随笔">
+                    <div class="prevTitle">随笔</div>
                 </a>
             
         </li>
