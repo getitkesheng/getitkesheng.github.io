@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>顺序栈实现（基于C语言,未完待续....） · kesheng&#39;s personal blog</title>
+    <title>打开微信时脑海中突然产生一个想法 · kesheng&#39;s personal blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">kesheng&#39;studio</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">顺序栈实现（基于C语言,未完待续....）</a>
+                <a href="#" class="post-name">打开微信时脑海中突然产生一个想法</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            顺序栈实现（基于C语言,未完待续....）
+            打开微信时脑海中突然产生一个想法
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">464</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">118</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/05/20</span>
+                    <span class="post-intro-time">2019/05/28</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,16 +395,17 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h3 id="功能要求：顺序栈的初始化，入栈，出栈，判断顺序栈是否为空，顺序栈的输出及求顺序栈长度"><a href="#功能要求：顺序栈的初始化，入栈，出栈，判断顺序栈是否为空，顺序栈的输出及求顺序栈长度" class="headerlink" title="功能要求：顺序栈的初始化，入栈，出栈，判断顺序栈是否为空，顺序栈的输出及求顺序栈长度"></a>功能要求：顺序栈的初始化，入栈，出栈，判断顺序栈是否为空，顺序栈的输出及求顺序栈长度</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line">	                                                         /*顺序栈*/</span><br><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;malloc.h&gt;</span><br><span class="line">#include&lt;process.h&gt;</span><br><span class="line">#define STACK_INIT_SIZE 10</span><br><span class="line">#define STACKINCREMENT 5</span><br><span class="line">#define MAXQSIZE 100</span><br><span class="line">#define OK 1</span><br><span class="line">#define Error 0</span><br><span class="line"></span><br><span class="line">typedef char QElemType;</span><br><span class="line">int yes = 0;</span><br><span class="line"></span><br><span class="line">typedef struct&#123;                //顺序栈结构</span><br><span class="line">	char *base;</span><br><span class="line">	char *top;</span><br><span class="line">	int stacksize;</span><br><span class="line">&#125;SeqStack;</span><br><span class="line"></span><br><span class="line">void CreateStack(SeqStack *Q)   //创建顺序栈操作</span><br><span class="line">&#123;</span><br><span class="line">	int i,length;</span><br><span class="line">	char ch;</span><br><span class="line">	printf(&quot;请输入顺序栈长度：\n&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;,&amp;length);</span><br><span class="line">	for(i=0;i&lt;length;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;请输入顺序栈的元素：\n&quot;);</span><br><span class="line">		scanf(&quot;%c&quot;,&amp;ch);</span><br><span class="line">		if((ch=getchar()) != &apos;\n&apos;)</span><br><span class="line">			*Q-&gt;top++ = ch; //***有点思维,注意运算符顺序***</span><br><span class="line">	&#125;</span><br><span class="line">	yes = 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int push(SeqStack *S,char e)    //顺序栈入栈操作</span><br><span class="line">&#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int menu()                     //顺序栈操作菜单</span><br><span class="line">&#123;</span><br><span class="line">	printf(&quot;\t\t\t顺序栈基本操作实验\n&quot;);</span><br><span class="line">	printf(&quot;*************************************************************\n&quot;);</span><br><span class="line">	printf(&quot;1.建立顺序栈\n&quot;);</span><br><span class="line">	printf(&quot;2.顺序栈入栈操作\n&quot;);</span><br><span class="line">	printf(&quot;3.顺序栈出栈操作\n&quot;);</span><br><span class="line">	printf(&quot;4.求顺序栈长度\n&quot;);</span><br><span class="line">	printf(&quot;5.判断顺序栈是否为空\n&quot;);</span><br><span class="line">	printf(&quot;6.输出顺序栈\n&quot;);</span><br><span class="line">	printf(&quot;7.销毁顺序栈\n&quot;);</span><br><span class="line">	printf(&quot;8.退出\n&quot;);</span><br><span class="line">	printf(&quot;*************************************************************\n&quot;);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int func()                     //各种功能函数封装</span><br><span class="line">&#123;</span><br><span class="line">	SeqStack ptr;</span><br><span class="line">	int sel;</span><br><span class="line">	char ch;</span><br><span class="line">	InitStack(&amp;ptr);</span><br><span class="line">	while(1)</span><br><span class="line">	&#123;</span><br><span class="line">		menu();</span><br><span class="line">		printf(&quot;请输入指令（0-7）：\n&quot;);</span><br><span class="line">		scanf(&quot;%d&quot;,&amp;sel);</span><br><span class="line">		switch(sel)&#123;</span><br><span class="line">		    case 1:if(yes == 1)</span><br><span class="line">				   &#123;</span><br><span class="line">						printf(&quot;此时顺序栈已创建，不能再次创建！\n&quot;);</span><br><span class="line">						break;</span><br><span class="line">				   &#125;</span><br><span class="line">					else</span><br><span class="line">						CreatStack(&amp;ptr);</span><br><span class="line">						break;</span><br><span class="line"></span><br><span class="line">			case 2:if(yes == 0)</span><br><span class="line">				   &#123;</span><br><span class="line">						printf(&quot;此时顺序栈未创建，不能入栈！抱歉！&quot;);</span><br><span class="line">						break;</span><br><span class="line">				   &#125;</span><br><span class="line">				else</span><br><span class="line">				&#123;</span><br><span class="line">					printf(&quot;请输入栈的元素值：\n&quot;);</span><br><span class="line">					scanf(&quot;%c&quot;,&amp;ch);</span><br><span class="line">					if((ch=getchar()) != &apos;\n&apos;)</span><br><span class="line">						push(&amp;ptr,ch);</span><br><span class="line">					break;</span><br><span class="line">				&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int main(void)                  //程序入口</span><br><span class="line">&#123;</span><br><span class="line">	func();</span><br><span class="line">	return OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <pre><code>对于大多数学生党来说，手机已经是生活必需品了，每天都会打开各种app,
+</code></pre><p>其中最多的就是QQ，WeChat，微博，抖音等社交娱乐性软件，那么做一个可以<br>统计你每天打开这些app的次数，时间段，使用时长，并根据每个个体的特点<br>推送一些文字，图片等功能的辅助app或者插件，会不会很有意思。。。。。。。<br>2019.5.28更</p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://getitkesheng.github.io">kesheng</a>
-            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/05/20/14/">http://getitkesheng.github.io/2019/05/20/14/</a>
-            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/05/20/14/">May 20th 2019, 3:59:38 pm</a>
-            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/05/20/14/">May 20th 2019, 4:04:19 pm</a>
+            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/05/28/22/">http://getitkesheng.github.io/2019/05/28/22/</a>
+            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/05/28/22/">May 28th 2019, 9:24:57 pm</a>
+            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/05/28/22/">May 28th 2019, 9:35:03 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -412,17 +413,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2019/05/23/16/" title="哈希查找">
-                    <div class="nextTitle">哈希查找</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/05/20/15/" title="5.20? 今天陪伴我一整天的竟然是coding.......">
-                    <div class="prevTitle">5.20? 今天陪伴我一整天的竟然是coding.......</div>
+                <a href="/2019/05/28/21/" title="关于bootstrap如何在html页面加载使用">
+                    <div class="prevTitle">关于bootstrap如何在html页面加载使用</div>
                 </a>
             
         </li>
@@ -541,7 +537,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#功能要求：顺序栈的初始化，入栈，出栈，判断顺序栈是否为空，顺序栈的输出及求顺序栈长度"><span class="toc-number">1.</span> <span class="toc-text">功能要求：顺序栈的初始化，入栈，出栈，判断顺序栈是否为空，顺序栈的输出及求顺序栈长度</span></a></li></ol>
+        
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
