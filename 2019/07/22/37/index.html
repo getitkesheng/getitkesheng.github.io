@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>致像我一样的菜鸡 · kesheng&#39;s personal blog</title>
+    <title>java中static修饰符，对象数组，增强型循环基本使用案例 · kesheng&#39;s personal blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">kesheng&#39;studio</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">致像我一样的菜鸡</a>
+                <a href="#" class="post-name">java中static修饰符，对象数组，增强型循环基本使用案例</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            致像我一样的菜鸡
+            java中static修饰符，对象数组，增强型循环基本使用案例
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">34</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">441</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/05/29</span>
+                    <span class="post-intro-time">2019/07/22</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,16 +395,15 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>互联网的任何一个技术或应用方向的学习都是永无止境的（今天深深的体会到了）</p>
-
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">/*     </span><br><span class="line">* 项目名称：Java基础   </span><br><span class="line">* 类名称：static修饰符和对象数组的使用   </span><br><span class="line">* 类描述：   </span><br><span class="line">* 创建人：柯盛   </span><br><span class="line">* 创建时间：2019年7月22日 上午10:12:01   </span><br><span class="line">* @version</span><br><span class="line">* @其他：        </span><br><span class="line">*/</span><br><span class="line">class Employee&#123;          //雇员</span><br><span class="line">	private String id;</span><br><span class="line">	private String name;</span><br><span class="line">	private int age;</span><br><span class="line">	private String vocation;</span><br><span class="line">	static int counter = 0;      //静态成员，初始化为0，无访问限定词</span><br><span class="line">	</span><br><span class="line">	public Employee()&#123;&#125;</span><br><span class="line">	public Employee(String id,String name,int age,String vocation)&#123;</span><br><span class="line">		set(id,name,age,vocation);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public void set(String id,String name,int age,String vocation) &#123;</span><br><span class="line">		this.id = id;</span><br><span class="line">		this.name = name;</span><br><span class="line">		this.age = age;</span><br><span class="line">		this.vocation = vocation;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public void 签到() &#123;</span><br><span class="line">		System.out.println(name + &quot;签到&quot;);</span><br><span class="line">		counter++;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public int 出勤人数() &#123;</span><br><span class="line">		return counter;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">public class static修饰符和对象数组的使用 &#123;</span><br><span class="line">	public static void main(String args[])</span><br><span class="line">	&#123;</span><br><span class="line">		Employee 雇员[] = &#123;new Employee(&quot;0001&quot;,&quot;张文军&quot;,50,&quot;总经理&quot;),</span><br><span class="line">						  new Employee(&quot;0002&quot;,&quot;李琦&quot;,45,&quot;副经理&quot;) ,</span><br><span class="line">						  new Employee(&quot;0003&quot;,&quot;张丽&quot;,25,&quot;秘书&quot;)				  </span><br><span class="line">		&#125;;          //注意：这里要加分号</span><br><span class="line">		</span><br><span class="line">		for(Employee employee:雇员)</span><br><span class="line">		&#123;</span><br><span class="line">			employee.签到();</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;今日出勤总人数（通过不同途径得到）：&quot;);</span><br><span class="line">		//可以通过任何一个雇员访问方法得到</span><br><span class="line">		System.out.println(&quot;今日共有&quot;+雇员[0].出勤人数()+&quot;人出勤！&quot;);     //通过第0个雇员得到</span><br><span class="line">		System.out.println(&quot;今日共有&quot;+雇员[2].出勤人数()+&quot;人出勤！&quot;);     //通过第2个雇员得到</span><br><span class="line">		//也可以通过对象直接访问静态域</span><br><span class="line">		//声明counter时无访问限定词，所以同一包中可用对象名访问</span><br><span class="line">		System.out.println(&quot;今日共有&quot;+雇员[1].counter+&quot;人出勤！&quot;);     //通过第1个雇员得到</span><br><span class="line">		//也可以通过类名访问静态域</span><br><span class="line">		System.out.println(&quot;今日共有&quot;+Employee.counter+&quot;人出勤！&quot;);     //通过类名得到</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://getitkesheng.github.io">kesheng</a>
-            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/05/29/24/">http://getitkesheng.github.io/2019/05/29/24/</a>
-            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/05/29/24/">May 29th 2019, 5:20:13 pm</a>
-            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/05/29/24/">May 29th 2019, 5:24:46 pm</a>
+            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/07/22/37/">http://getitkesheng.github.io/2019/07/22/37/</a>
+            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/07/22/37/">July 22nd 2019, 10:48:59 am</a>
+            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/07/22/37/">July 22nd 2019, 10:52:20 am</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -412,17 +411,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2019/05/29/25/" title="来自一位主播">
-                    <div class="nextTitle">来自一位主播</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/05/28/23/" title="关于vue路由的基本使用">
-                    <div class="prevTitle">关于vue路由的基本使用</div>
+                <a href="/2019/07/08/36/" title="C语言头文件总结">
+                    <div class="prevTitle">C语言头文件总结</div>
                 </a>
             
         </li>
