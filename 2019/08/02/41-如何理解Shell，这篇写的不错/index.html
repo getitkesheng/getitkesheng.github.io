@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>javascript中window对象的方法 + 属性 · kesheng&#39;s personal blog</title>
+    <title>如何理解Shell，这篇写的不错 · kesheng&#39;s personal blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">kesheng&#39;studio</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">javascript中window对象的方法 + 属性</a>
+                <a href="#" class="post-name">如何理解Shell，这篇写的不错</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            javascript中window对象的方法 + 属性
+            如何理解Shell，这篇写的不错
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">4.1k</span>阅读时长: <span class="post-count reading-time">15 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">696</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/06/01</span>
+                    <span class="post-intro-time">2019/08/02</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,83 +395,24 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>window对象有以下方法：<br>open() ，close() ，alert() ，confirm() ，prompt() ，setTimeout() ，clearTimeout() ，setInterval() ，clearInterval() ，moveBy() ，moveTo() ，resizeBy() ，resizeTo() ，scrollBy() ，scrollTo() ，find() ，back() ，forward() ，home() ，stop() ，print() ，blur() ，focus() ，captureEvent() ，ableExternalCapture()<br>，disableExternalCapture() ，handleEvent() ，releaseEvent() ，routeEvent() ，scroll() </p>
-<ol>
-<li><p>open()方法<br>　　语法格式：<br>window.open(URL,窗口名称,窗口风格)<br>　　功能：打开一个新的窗口，并在窗口中装载指定URL地址的网页。<br>　　说明：<br>open()方法用于打开一个新的浏览器窗口，并在新窗口中装入一个指定的URL地址；<br>open()方法在打开一个新的浏览器窗口时，还可以指定窗口的名称(第二个参数)；<br>open()方法在打开一个新的浏览器窗口时，还可以指定窗口的风格(第三个参数)，<br>窗口风格有以下选项，这些选项可以多选，如果多选，各选项之间用逗号分隔：<br>toolbar：指定窗口是否有标准工具栏。当该选项的值为1或yes时，表示有标准<br>工具栏，当该选项的值为0或no时，表示没有标准工具栏；<br>location：指定窗口是否有地址工具栏，选项的值及含义与toolbar相同；<br>directories：指定窗口是否有链接工具栏，选项的值及含义与toolbar相同；<br>status：指定窗口是否有状态栏，选项的值及含义与toolbar相同；<br>menubar：指定窗口是否有菜单，选项的值及含义与toolbar相同；<br>scrollbar：指定当前窗口文档大于窗口时是否有滚动条，选项的值及含义与<br>toolbar相同；<br>resizable：指定窗口是否可改变大小，选项的值及含义与toolbar相同；<br>width：以像素为单位指定窗口的宽度，已被innerWidth取代；<br>height：以像素为单位指定窗口的高度，已被innerHeight取代；<br>outerWidth：以像素为单位指定窗口的外部宽度；<br>outerHeight：以像素为单位指定窗口的外部高度；<br>left：以像素为单位指定窗口距屏幕左边的位置；<br>top：以像素为单位指定窗口距屏幕顶端的位置；<br>alwaysLowered：指定窗口隐藏在所有窗口之后，选项的值及含义与toolbar相同；<br>alwaysRaised：指定窗口浮在所有窗口之上，选项的值及含义与toolbar相同；<br>dependent：指定打开的窗口为当前窗口的一个子窗口，并随着父窗口的关闭而<br>关闭，选项的值及含义与toolbar相同；<br>hotkeys：在没有菜单栏的新窗口中设置安全退出的热键，选项的值及含义与<br>toolbar相同；<br>innerHeight：设定窗口中文档的像素高度；<br>innerWidth：设定窗口中文档的像素宽度；<br>screenX：设定窗口距离屏幕左边界的像素长度；<br>screenY：设定窗口距离屏幕上边界的像素长度；<br>titleBar：指明标题栏是否在新窗口中可见，选项的值及含义与toolbar相同；<br>z-look：指明当窗口被激活时，不能浮在其它窗口之上，选项的值及含义与<br>toolbar相同。<br>open方法返回的是该窗口的引用。<br>小技巧：该方法经常用于在打开一个网页时自动打开另一个窗口。 </p>
-</li>
-<li><p>close()方法<br>语法格式：<br>window.close()<br>功能：close方法用于自动关闭浏览器窗口。 </p>
-</li>
-<li>alert方法<br>语法格式：<br>window.alert(提示字符串)<br>功能：弹出一个警告框，在警告框内显示提示字符串文本。 </li>
-<li>confirm方法<br>语法格式：<br>window.confirm(提示字符串)<br>功能：显示一个确认框，在确认框内显示提示字符串，当用户单击“确定”按钮<br>时该方法返回true，单击“取消”时返回false。 </li>
-<li>prompt方法<br>语法格式：<br>window.prompt(提示字符串，缺省文本)<br>功能：显示一个输入框，在输入框内显示提示字符串，在输入文本框显示缺省文<br>本，并等待用户输入，当用户单击“确定”按钮时，返回用户输入的字符串，当<br>单击“取消”按钮时，返回null值。 </li>
-<li>setTimeout方法<br>语法格式：<br>window.setTimeout(代码字符表达式,毫秒数)<br>功能：定时设置，当到了指定的毫秒数后，自动执行代码字符表达式。 </li>
-<li>clearTimeout方法<br>语法格式：<br>window.clearTimeout(定时器)<br>功能：取消以前的定时设置，其中的参数是用setTimeout设置时的返回值。 </li>
-<li>setInterval方法<br>语法格式：<br>window.setInterval(代码字符表达式,毫秒数)<br>功能：设定一个时间间隔后(第二个参数)，反复执行“代码字符表达式”的内容 </li>
-<li>clearInterval方法<br>语法格式：<br>window.clearInterval(时间间隔器)<br>功能：取消setInterval设置的定时。其中的参数是setInterval方法的返回值。 </li>
-<li>moveBy方法<br>语法格式：<br>window.moveBy(水平位移量,垂直位移量)<br>功能：按照给定像素参数移动指定窗口。第一个参数是窗口水平移动的像素，第<br>二个参数是窗口垂直移动的像素。<br>11.moveTo方法<br>语法格式：<br>window.moveTo(x,y)<br>功能：将窗口移动到指定的指定坐标(x,y)处。 </li>
-<li>resizeBy方法<br>语法格式：<br>window.resizeBy(水平,垂直)<br>功能：将当前窗口改变指定的大小(x,y)，当x、y的值大于0时为扩大，小于0时<br>为缩小。 </li>
-<li>resizeTo方法<br>语法格式：<br>window.resizeTo(水平宽度,垂直宽度)<br>功能：将当前窗口改变成(x,y)大小，x、y分别为宽度和高度。 </li>
-<li>scrollBy方法<br>语法格式：<br>window.scrollBy(水平位移量，垂直位移量)<br>功能：将窗口中的内容按给定的位移量滚动。参数为正数时，正向滚动，否则反<br>向滚动。 </li>
-<li>scrollTo方法<br>语法格式：<br>window.scrollTo(x,y)<br>功能：将窗口中的内容滚动到指定位置。<br>16.find方法<br>语法格式：<br>window.find()<br>功能：当触发该方法时，将弹出一个“find”(查找)对话窗口，并允许用户在触<br>发find方法的页面中查找一个字符串。<br>注：该属性在IE5.5及Netscape6.0中都不支持。 </li>
-<li>back方法<br>语法格式：<br>window.back()<br>功能：模拟用户点击浏览器上的“后退”按钮，将页面转到浏览器的上一页。<br>说明：仅当当前页面存在上一页时才能进行该操作。<br>注：IE5.5不支持该方法，Netscape6.0支持。 </li>
-<li>forward方法<br>语法格式：<br>window.forward()<br>功能：模拟用户点击浏览器上的“前进”按钮，将页面转到浏览器的下一页。<br>说明：仅当当前页面存在下一页时才能进行该操作。<br>注：IE5.5不支持该方法，Netscape6.0支持。 </li>
-<li>home方法<br>语法格式：<br>window.home()<br>功能：模拟用户点击浏览器上的“主页”按钮，将页面转到指定的页面上。<br>注：IE5.5不支持该方法，Netscape6.0支持。 </li>
-<li>stop方法<br>语法格式：<br>window.stop()<br>功能：模拟用户点击浏览器上的“停止”按钮，终止浏览器的下载操作。<br>注：IE5.5不支持该方法，Netscape6.0支持。 </li>
-<li>print方法<br>语法格式：<br>window.print()<br>功能：模拟用户点击浏览器上的“打印”按钮，通知浏览器打开打印对话框打印<br>当前页。 </li>
-<li>blur方法<br>语法格式：<br>window.blur()<br>功能：从窗口中移出焦点。当与focus方法合用时必须小心，因为可能导致焦点<br>不断移进移出。 </li>
-<li>focus方法<br>语法格式：<br>window.focus()<br>功能：使窗口中得到焦点。当与blur方法合用时必须小心，因为可能导致焦点不<br>断移进移出 </li>
-<li>captureevent方法<br>语法格式：<br>window.captureevent(event)<br>window.captureevent(事件1|事件2|…|事件n)<br>功能：捕捉指定参数的所有事件。由于能够捕获哪些由本地程序自己处理的事件<br>，所以程序员可以随意定义函数来处理事件。如果有多个事件需要捕捉，各事件<br>之间用管道符“|”隔开。可捕捉的事件类型如下：<br>event.abort<br>event.blur<br>event.change<br>event.click<br>event.dblclick<br>event.dragdrop<br>event.error<br>event.focus<br>event.keydown<br>event.keypress<br>event.keyup<br>event.load<br>event.mousedown<br>event.mousuemove<br>event.mouseout<br>event.mouseover<br>event.mouseup<br>event.move<br>event.reset<br>event.resize<br>event.select<br>event.submit<br>event.unload </li>
-<li>enableexternalcapture事件<br>语法格式：<br>window.enableexternalcapture(event)<br>功能：enableexternalcapture方法用于捕捉通过参数传入的外部事件。 </li>
-<li>disableexternalcapture事件<br>语法格式：<br>window.disableexternalcapture()<br>功能：取消enableexternalcapture方法的设置，终止对外部事件的捕捉。 </li>
-<li>handleevent事件<br>语法格式：<br>window.handleevent(event)<br>功能：触发指定事件的事件处理器。 </li>
-<li>releaseevent事件<br>语法格式：<br>window.releaseevent(event)<br>window.releaseevent(事件1|事件2|…|事件n)<br>功能：释放通过参数传入的已被捕捉的事件，这些事件是由<br>window.captureevent方法设置的，可释放的事件与captureevent相同。 </li>
-<li>routeevent事件<br>语法格式：<br>window.releaseevent(event)<br>功能：把被捕捉类型的所有事件转交给标准事件处理方法进行处理，可转交的事<br>件与captureevent相同。<br>30 scroll事件<br>语法格式：<br>window.scroll(x坐标,y坐标)<br>功能：将窗口移动到指定的坐标位置。<br>6-2-2 window对象的属性<br>window对象具有如下属性：<br>status<br>statusbar<br>statusbar.visible<br>defaultstatus<br>location<br>locationbar<br>locationbar.visible<br>self<br>name<br>closed<br>frames<br>frames.length<br>length<br>document<br>history<br>innerheight<br>innerwidth<br>menubar<br>menubar.visible<br>opener<br>outerheight<br>outerwidth<br>pagexoffset<br>pageyoffset<br>parent<br>personalbar<br>personalbar.visible<br>scrollbar<br>scrollbar.visible<br>toolbar<br>toolbar.visible<br>top </li>
-<li>status属性<br>语法格式：<br>window.status=字符串<br>功能：设置或给出浏览器窗口中状态栏的当前显示信息。<br>小技巧：可以使用该属性设置浏览器窗口状态栏信息。 </li>
-<li>statusbar属性<br>语法格式：<br>window.statusbar.属性<br>功能：statusbar属性本身也是一个对象，用于访问它自已的visible属性从而确<br>定状态栏是否可见。<br>注：ie5.5浏览器不支持该属性。 </li>
-<li>statusbar.visible属性<br>语法格式：<br>window.statusbar.visible<br>功能：检查状态栏是否可见，如果可见则返回true，反之返回false。<br>注：ie5.5浏览器不支持该属性。 </li>
-<li>defaultstatus属性<br>语法格式：<br>window.defaultstatus[=字符串]<br>功能：defaultstatus属性值是浏览器窗中状态栏的默认显示信息<br>5.location属性<br>语法格式：<br>window.location=url<br>功能：给出当前窗口的url信息或指定打开窗口的url。 </li>
-<li>locationbar属性<br>语法格式：<br>window.locationbar.属性<br>功能：locationbar属性也可以看成是一个子对象，这个属性用来获取它自已的<br>visible属性来确定位置栏是否可见。<br>到目前为止，该属性只有一个子属性：visible。<br>注：ie5.5不支持该属性。 </li>
-<li>locationbar.visible属性<br>语法格式：<br>window.locationbar.visible<br>功能：返回位置栏是否可见，如果可见返回true，反之返回false。<br>注：ie5.5不支持该属性。 </li>
-<li>self属性<br>语法格式：<br>window.self.方法<br>window.self.属性<br>功能：该属性包含当前窗口的标志，利用这个属性，可以保证在多个窗口被打开<br>的情况下，正确调用当前窗口内的函数或属性而不会发生混乱。 </li>
-<li>name属性<br>语法格式：<br>window.name=名称<br>功能：返回窗口名称，这个名称是由window.open()方法创建新窗口时给定的。<br>在javascript1.0版本中，这个属性只能用于读取窗口名称，而到了<br>javascript1.1版本时，可以用这个属性给一个不是用window.open()方法创建的<br>窗口指定一个名称。 </li>
-<li>closed属性<br>语法格式：<br>window.closed<br>功能：closed属性用于返回指定窗口的实例是否已经关闭，如果关闭，返回true<br>，反之返回flase。 </li>
-<li>frames属性<br>语法格式：<br>window.frames[“框架名称”]<br>window.frames[数值]<br>功能：frames属性是一个数组，用来存储文档中每一个由元素创建的子窗口(框<br>架)实例，其中的下标即可以是次序号也可以是用frame元素的name属性指定的名<br>称来得到并使用。 </li>
-<li>frames.length属性<br>语法格式：<br>window.frames.length<br>功能：frames.length属性用于给出文档中子窗口(框架)实例的个数。 </li>
-<li>length属性<br>语法格式：<br>window.length<br>功能：length属性返回一个窗口内的子窗口数目，该属性与<br>window.frame.length属性的值相同。 </li>
-<li>document属性<br>语法格式：<br>window.document.事件<br>window.document.方法<br>window.document.属性<br>功能：window对象的子对象document是javascript的核心对象，在脚本中遇到<br>body元素时创建一个实例。 </li>
-<li>history属性<br>语法格式：<br>window.history[数值]<br>window.history.方法()<br>window.history.属性 </li>
-</ol>
-<p>window.history.back()加载历史列表的上一个url</p>
-<p>window.history.forward()加载历史列表的下一个url</p>
-<p>window对象的子对象history是javascript的核心对象之一，该属性包含了一个<br>已访问过页面的名称和url的数组。 </p>
-<ol start="16">
-<li>innerheight属性<br>语法格式：<br>window.innerheight=数值<br>功能：返回或指定浏览器窗口中文档的像素高度，这个高度不包括任何工具栏和<br>组成窗口的页面修饰高度。<br>注：ie5.5不支持该属性。 </li>
-<li>innerwidth属性<br>语法格式：<br>window.innerheight=数值<br>功能：返回或指定浏览器窗口中文档的像素宽度，这个宽度不包括任何工具栏和<br>组成窗口的页面修饰宽度。<br>注：ie5.5不支持该属性。 </li>
-<li>menubar属性<br>语法格式：<br>window.menubar.属性<br>功能：menubar属性也可以看成是一个子对象，这个属性用来获取它自已的<br>visible属性来确定菜单栏是否可见。<br>到目前为止，该属性只有一个子属性：visible。<br>注：ie5.5不支持该属性。 </li>
-<li>menubar.visible属性<br>语法格式：<br>window.menubar.visible<br>功能：menubar.visible属性用于返回菜单栏是否可见，如果可见返回true，反<br>之返回false。<br>注：ie5.5不支持该属性。 </li>
-<li>opener属性<br>语法格式：<br>window.opener<br>window.opener.方法<br>window.opener.属性<br>功能：opener属性与打开该窗口的父窗口相联系，当访问子窗口中operer属性时<br>，返回的是父窗口。通过该属性，可以使用父窗口对象中的方法和属性。 </li>
-<li>outerheight属性<br>语法格式：<br>window.outerheight<br>功能：outerheight属性用于访问浏览器窗口的像素高度，该高度包括工具栏和<br>装饰边的高度。<br>注：ie5.5不支持该属性。 </li>
-<li>outerwidth属性<br>语法格式：<br>window.outerwidth<br>功能：outerwidth属性用于访问浏览器窗口的像素宽度，该宽度包括工具栏和装<br>饰边的宽度。<br>注：ie5.5不支持该属性。 </li>
-<li>pagexoffset属性<br>语法格式：<br>window.pagexoffset=数值<br>功能：指定浏览器窗口中文档左上角在窗口中的当前水平像素位置。在利用<br>moveto移动之前，可以通过该属性来决定是否需要移动窗口。因为该属性返回了<br>可见文档相对整个页面的当前位置。<br>注：ie5.5不支持该属性。 </li>
-<li>pageyoffset属性<br>语法格式：<br>window.pageyoffset=数值<br>功能：指定浏览器窗口中文档左上角在窗口中的当前垂直像素位置。在利用<br>moveto移动之前，可以通过该属性来决定是否需要移动窗口。因为该属性返回了<br>可见文档相对整个页面的当前位置。<br>注：ie5.5不支持该属性。 </li>
-<li>parent属性<br>语法格式：<br>window.parent.frames[数值]<br>window.parent.framesname<br>功能：访问各个子窗口(多框架)所在的父窗口。 </li>
-<li>personalbar属性<br>语法格式：<br>window.personalbar.属性<br>功能：personalbar属性本身也是一个对象，用于访问其自身的visible属性来确<br>定个人栏是否可见。<br>注：ie5.5不支持该属性。 </li>
-<li>personalbar.visible属性<br>语法格式：<br>window.personalbar.visible<br>功能：确定个人栏是否可见，如果可见则返回true，反之返回false。<br>注：ie5.5不支持该属性。 </li>
-<li>scrollbars属性<br>语法格式：<br>window.scrollbars.属性<br>功能：scrollbars属性本身也是一个对象，用于访问其自身的visible属性来确<br>定滚动栏是否可见<br>注：ie5.5不支持该属性。 </li>
-<li>scrollbars.visible属性<br>语法格式：<br>window.scrollbars.visible<br>功能：scrollbars.visible用于确定滚动栏是否可见，如果可见则返回true，反<br>之返回false。<br>注：ie5.5不支持该属性。 </li>
-<li>toolbar属性<br>语法格式：<br>window.toolbar.属性<br>功能：toolbar属性本身也是一个对象，用于访问它自已的visible属性从而确定<br>工具栏是否可见。<br>注：ie5.5不支持该属性。 </li>
-<li>toolbar.visible属性<br>语法格式：<br>window.toolbar.visible<br>功能：toolbar.visible属性用于检查工具栏是否可见，如果可见则返回true，<br>反之返回false。<br>注：ie5.5不支持该属性。 </li>
-<li>top属性<br>语法格式：<br>window.top.frames[数值]<br>window.top.framename<br>window.top.方法()<br>window.top.属性<br>功能：window对象的top属性用于包含所有装入浏览器的子窗口(多框架)的最顶层窗口的信息。</li>
-</ol>
+        <p><code>`</code><br>现在我们使用的操作系统（Windows、Mac OS、Android、iOS 等）都是带图形界面的，简单直观，容易上手，对专业用户（程序员、网管等）和普通用户（家庭主妇、老年人等）都非常适用；计算机的普及离不开图形界面。</p>
+<p>然而在计算机的早期并没有图形界面，我们只能通过一个一个地命令来控制计算机，这些命令有成百上千之多，且不说记住这些命令非常困难，每天面对没有任何色彩的“黑屏”本身就是一件枯燥的事情；这个时候的计算机还远远谈不上炫酷和普及，只有专业人员才能使用。</p>
+<p>对于图形界面，用户点击某个图标就能启动某个程序；对于命令行，用户输入某个程序的名字（可以看做一个命令）就能启动某个程序。这两者的基本过程都是类似的，都需要查找程序在硬盘上的安装位置，然后将它们加载到内存运行。</p>
+<p>换句话说，图形界面和命令行要达到的目的是一样的，都是让用户控制计算机。</p>
+<p>然而，真正能够控制计算机硬件（CPU、内存、显示器等）的只有操作系统内核（Kernel），图形界面和命令行只是架设在用户和内核之间的一座桥梁。</p>
+<p>由于安全、复杂、繁琐等原因，用户不能直接接触内核（也没有必要），需要另外再开发一个程序，让用户直接使用这个程序；该程序的作用就是接收用户的操作（点击图标、输入命令），并进行简单的处理，然后再传递给内核，这样用户就能间接地使用操作系统内核了。你看，在用户和内核之间增加一层“代理”，既能简化用户的操作，又能保障内核的安全，何乐不为呢？</p>
+<p>用户界面和命令行就是这个另外开发的程序，就是这层“代理”。在Linux下，这个命令行程序叫做 Shell。</p>
+<p>Shell 是一个应用程序，它连接了用户和 Linux 内核，让用户能够更加高效、安全、低成本地使用 Linux 内核，这就是 Shell 的本质。</p>
+<p>Shell 本身并不是内核的一部分，它只是站在内核的基础上编写的一个应用程序，它和 QQ、迅雷、Firefox 等其它软件没有什么区别。然而 Shell 也有着它的特殊性，就是开机立马启动，并呈现在用户面前；用户通过 Shell 来使用 Linux，不启动 Shell 的话，用户就没办法使用 Linux。</p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://getitkesheng.github.io">kesheng</a>
-            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/06/01/28/">http://getitkesheng.github.io/2019/06/01/28/</a>
-            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/06/01/28/">June 1st 2019, 5:11:46 pm</a>
-            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/06/01/28/">June 1st 2019, 5:13:16 pm</a>
+            </p><p>原文链接：<a href="http://getitkesheng.github.io/2019/08/02/41-如何理解Shell，这篇写的不错/">http://getitkesheng.github.io/2019/08/02/41-如何理解Shell，这篇写的不错/</a>
+            </p><p>发表日期：<a href="http://getitkesheng.github.io/2019/08/02/41-如何理解Shell，这篇写的不错/">August 2nd 2019, 9:42:01 pm</a>
+            </p><p>更新日期：<a href="http://getitkesheng.github.io/2019/08/02/41-如何理解Shell，这篇写的不错/">August 2nd 2019, 10:02:30 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -479,17 +420,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2019/06/02/29/" title="站在巨人的肩膀上Ctrlc and Ctrlv">
-                    <div class="nextTitle">站在巨人的肩膀上Ctrlc and Ctrlv</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/06/01/27/" title="bootstrap字体图标不能显示？">
-                    <div class="prevTitle">bootstrap字体图标不能显示？</div>
+                <a href="/2019/07/30/40-简单枚举类/" title="简单枚举类小案例">
+                    <div class="prevTitle">简单枚举类小案例</div>
                 </a>
             
         </li>
